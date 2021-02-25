@@ -37,7 +37,7 @@ Update-AzCosmosDBAccountFailoverPriority -FailoverPolicy <String[]> -InputObject
 
 ### Example 1
 ```powershell
-PS C:\> Update-AzCosmosDBAccountFailoverPriority -ResourceGroupName rg -Name dbname -FailoverPolicy "region1, region2, region3"
+PS C:\> Update-AzCosmosDBAccountFailoverPriority -ResourceGroupName rg -Name dbname -FailoverPolicy @("region1","region2","region3")
 ```
 
 FailoverPolicies updated with region1 as FailoverPriority 1, region2 as FailoverPriority 2 and region3 as FailoverPriority 3.
